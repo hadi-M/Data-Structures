@@ -1,6 +1,7 @@
 import unittest
 from doubly_linked_list import ListNode
 from doubly_linked_list import DoublyLinkedList
+from pdb import set_trace as st
 
 class DoublyLinkedListTests(unittest.TestCase):
     def setUp(self):
@@ -66,6 +67,7 @@ class DoublyLinkedListTests(unittest.TestCase):
         self.assertEqual(len(self.dll), 2)
 
     def test_list_move_to_end(self):
+        # st()
         self.dll.add_to_head(40)
         self.assertEqual(self.dll.tail.value, 1)
         self.assertEqual(self.dll.head.value, 40)
